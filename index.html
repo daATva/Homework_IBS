@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>IBS. Курс HTML</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1>IBS. Курс HTML</h1>
+    </header>
+
+    <section class="section-html-elements">
+      <h2>Добавленные элементы в HTML5</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Категория</th>
+            <th>Элементы</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Семантические элементы для работы со структурой страниц</td>
+            <td>
+              &lt;article&gt;, &lt;aside&gt;, &lt;figcaption&gt;,
+              &lt;figure&gt;, &lt;footer&gt;, &lt;header&gt;, &lt;hgroup&gt;,
+              &lt;nav&gt;, &lt;section&gt;, &lt;details&gt;, &lt;summary&gt;
+            </td>
+          </tr>
+          <tr>
+            <td>Семантические элементы для работы с текстом</td>
+            <td>
+              &lt;mark&gt;, &lt;time&gt;, &lt;wbr&gt; (поддерживался и ранее, но
+              теперь официально является частью языка)
+            </td>
+          </tr>
+          <tr>
+            <td>Элементы для работы с веб-формами и интерактивности</td>
+            <td>
+              &lt;input&gt;, &lt;datalist&gt;, &lt;keygen&gt;, &lt;meter&gt;,
+              &lt;progress&gt;, &lt;command&gt;, &lt;menu&gt;, &lt;output&gt;
+            </td>
+          </tr>
+          <tr>
+            <td>Элементы для поддержки аудио, видео и подключаемых модулей</td>
+            <td>&lt;audio&gt;, &lt;video&gt;, &lt;source&gt;, &lt;embed&gt;</td>
+          </tr>
+          <tr>
+            <td>Поддержка холста</td>
+            <td>&lt;canvas&gt;</td>
+          </tr>
+          <tr>
+            <td>Поддержка иных языков</td>
+            <td>&lt;bdo&gt;, &lt;rp&gt;, &lt;rt&gt;, &lt;ruby&gt;</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section-html-removed-elements">
+      <h2>Удаленные элементы из HTML5</h2>
+      <ul>
+        <li>
+          «Удаленные» элементы будут работать в браузере, но валидаторы их
+          обнаружат.
+        </li>
+        <li>
+          Элементы для форматирования (<code
+            >&lt;basefont&gt;, &lt;big&gt;, &lt;center&gt;, &lt;font&gt;,
+            &lt;tt&gt;</code
+          >) удалены.
+        </li>
+        <li>
+          Фреймы (<code>&lt;frame&gt;, &lt;frameset&gt;, &lt;noframes&gt;</code
+          >) упразднены, но <code>&lt;iframe&gt;</code> остался.
+        </li>
+        <li>
+          Для замены старых элементов используются более современные аналоги
+          (например, abbr вместо
+          <code>&lt;acronym&gt;</code>).
+        </li>
+      </ul>
+    </section>
+
+    <section class="section-form-example">
+      <h2>Пример формы в стиле HTML5</h2>
+      <form>
+        <table>
+          <tbody>
+            <tr>
+              <td><label>Введите значение</label></td>
+              <td><input type="text" placeholder="Поле с подсказкой" /></td>
+            </tr>
+            <tr>
+              <td><label>Введите число от 1 до 100</label></td>
+              <td><input type="number" min="1" max="100" /></td>
+            </tr>
+            <tr>
+              <td><label>Введите email</label></td>
+              <td><input type="email" /></td>
+            </tr>
+            <tr>
+              <td><label>Введите телефон</label></td>
+              <td><input type="tel" /></td>
+            </tr>
+            <tr>
+              <td><label>Введите дату</label></td>
+              <td><input type="date" /></td>
+            </tr>
+            <tr>
+              <td><label>Введите время</label></td>
+              <td><input type="time" /></td>
+            </tr>
+            <tr>
+              <td><label>Выберите месяц</label></td>
+              <td><input type="month" /></td>
+            </tr>
+            <tr>
+              <td><label>Выберите неделю</label></td>
+              <td><input type="week" /></td>
+            </tr>
+            <tr>
+              <td><label>Файл</label></td>
+              <td><input type="file" /></td>
+            </tr>
+            <tr>
+              <td><label>Выберите цвет</label></td>
+              <td><input type="color" /></td>
+            </tr>
+            <tr>
+              <td><label>Выберите число из диапазона</label></td>
+              <td><input type="range" min="1" max="100" /></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </section>
+
+    <footer class="footer-contact">
+      <p>
+        Данила Пиунов, Email:
+        <a href="mailto:example@gmail.com">tvoydom056@gmail.com</a>
+      </p>
+    </footer>
+  </body>
+</html>
